@@ -1,0 +1,28 @@
+---
+title: "Instacart Flex Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+   orientation: column
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(janitor)
+library(stringr)
+library(forcats)
+library(viridis)
+library(plotly)
+library(shiny)
+```
+
+```{r read_p1,message=FALSE}
+instacart = read_csv("../data/instacart_train_data.csv.zip")
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+
+Column {data-width=550}
+-----------------------------------------------------------------------
